@@ -1,0 +1,45 @@
+.navigation {
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 40px 0;
+  margin-left: 40px;
+
+
+  &.isHovered {
+    width: 400px;
+    background-color: rgba(4, 4, 4, 0.8);
+
+    .userWrapper {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .buttons {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  transform: translateY(120px);
+}
+
+.userWrapper {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
